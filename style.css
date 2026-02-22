@@ -23,14 +23,18 @@ nav ul li a:hover { color: #ffc107; }
 
 /* Hero Section */
 .hero {
-  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  background: url('https://exploringacademia.com/sites/default/files/gallery/Pak-Austria%20Fachhochschule%20Institute%20of%20Applied%20Sciences%20and%20Technology%2C%20Haripur.jpg') no-repeat center center/cover;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   color: #fff;
-  text-align: center;
   padding: 0 20px;
+}
+.hero-content {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  max-width: 600px;
+  text-align: left;
 }
 .hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
 .hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
@@ -47,6 +51,17 @@ nav ul li a:hover { color: #ffc107; }
   background: #ffb300;
   transform: scale(1.05);
 }
+
+/* Alternative: Upper Right Position */
+/*
+.hero-content {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  max-width: 600px;
+  text-align: right;
+}
+*/
 
 /* Sections */
 section { padding: 80px 0; }
@@ -108,9 +123,17 @@ footer { background: #0d47a1; color: #fff; text-align: center; padding: 20px 0; 
   nav ul.show { left: 0; }
   nav ul li { margin: 15px 0; }
   .menu-toggle { display: block; cursor: pointer; font-size: 1.5rem; }
+  
+  .hero-content {
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    max-width: 100%;
+  }
+  .hero-content h1 { font-size: 2.2rem; }
 }
 .menu-toggle { display: none; color: #fff; }
-.hero-content h1 { font-size: 2.2rem; }
+
 /* Why Join Us */
 .why-join { max-width: 900px; margin: 0 auto; text-align: center; padding: 50px 20px; }
 .why-join p { font-size: 1.1rem; line-height: 1.8; }
